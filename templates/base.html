@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>{% block title %}{% endblock title %} | GPA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header-ctn {
+            height: 20vh;
+            width: 100%;
+            color: white;
+            text-align: center;
+            background: brown;
+        }
+
+        .header-ctn .top-head {
+            height: 30%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .header-ctn .main-head {
+            height: 70%;
+            width: 100%;
+            display: flex;
+        }
+
+        .header-ctn .main-head .institute-logo {
+            height: 100%;
+            width: 10%;
+            float: left;
+        }
+
+        .header-ctn .main-head .institute-name {
+            height: 100%;
+            width: 80%;
+        }
+
+        .header-ctn .main-head .board-logo {
+            height: 100%;
+            width: 10%;
+            float: right;
+        }
+    </style>
+  </head>
+  <body>
+        <div class="container-fluid header-ctn">
+            <div class="top-head">
+                <h3 class="float-left">tool-1</h3>
+                <h3 class="float-right">tool-2</h3>
+            </div>
+            <div class="main-head">
+                <div class="institute-logo">
+                    <h3>Institute LOGO</h3>
+                </div>
+                <div class="institute-name">
+                    <h3>Government Polytechnic Aadampur Tarabganj Gonda</h3>
+                </div>
+                <div class="board-logo">
+                    <h3>Board LOGO</h3>
+                </div>
+            </div>
+        </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">GPA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/academices">Academics</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Courses
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Mechanical Production Engineering</a></li>
+            <li><a class="dropdown-item" href="#">Mechanical Automobile Engineering</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Computer Science and Engineering</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/labs">Labs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/committee">Committee</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/hostel">Hostel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/placements">Placements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/alumni">Alumni</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/library">Digital Library</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact Us</a>
+        </li>
+        <!-- add new nav items here -->
+      </ul>
+    </div>
+  </div>
+</nav>
+{% block body %}
+{% endblock body %}
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

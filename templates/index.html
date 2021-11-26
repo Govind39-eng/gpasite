@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block body %}
+<style>
+  .body-container {
+      height: 60vh;
+      width: 100vw;
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-rows: 1fr;
+  }
+  .sidebar-left {
+      height: 100%;
+      width: 100%;
+  }
+  .sidebar-left .griv-portal {
+      height: 40%;
+      width: 100%;
+  }
+  .sidebar-left .institute-notice {
+      height: 40%;
+      width: 100%;
+  }
+  .sidebar-left .contact-us {
+      height: 20%;
+      width: 100%;
+  }
+  .main-container {
+      height: 100%;
+      width: 100%;
+      padding: 2px;
+  }
+  .main-container .intro-text {
+      height: 70%;
+      width: 100%;
+  }
+  .main-container .home-footer {
+      height: 30%;
+      width: 100%;
+  }
+  .sidebar-right {
+      height: 100%;
+      width: 100%;
+  }
+  .sidebar-right .news-events {
+      height: 50%;
+      width: 100%;
+  }
+  .sidebar-left .institute-notice {
+      height: 50%;
+      width: 100%;
+  }
+</style>
+<div class="container-fluid body-container">
+  <div class="sidebar-left">
+    <div class="griv-portal">
+      <h2>Grievence Redressal Portal</h2>
+      <p>Portal!</p>
+    </div>
+    <div class="institute-notice">
+      <h2>Institude Notice</h2>
+      <p>Notice!</p>
+    </div>
+    <div class="contact-us">
+      <h2>Contact Us</h2>
+      <p>Contact Details!</p>
+    </div>
+  </div>
+  <div class="main-container">
+    <div class="intro-text">
+      <h2>Welcome To Government Polytechnic Aadampur Tarabganj Gonda</h2>
+      <p style="text-align: justify">
+      Government Polytechnic Aadampur Tarabganj Gonda was established in the year 2013. The institute is situated in Aadampur, Tarabganj, Gonda - Umaribegamganj Road which is 30 km from railway station & 27 km from Bus Station.<br />In this institute student gets 3 years Diploma in Mechanical Enginnering Production, Mechanical Engineering Automobile, and Computer Science and Engineering. The institute is owened by Government of Uttar Pradesh & affiliated to the Board of Technical Education, Uttar Pradesh. Government Polytechnic Aadampur Tarabganj Gonda provides Diploma program to the students.<br />Government Polytechnic Aadampur Tarabganj Gonda is located at Aadampur, Umaribegamganj Road, Gonda.</p>
+    </div>
+    <div class="home-footer">
+      <h2>Footer</h2>
+      <p>Some tools and text.</p>
+    </div>
+  </div>
+  <div class="sidebar-right">
+    <div class="news-events">
+      <h2>News and Events</h2>
+      <p>Announcements!</p>
+    </div>
+    <div class="important-links">
+      <h2>Important Links</h2>
+      <p>Some Links!</p>
+    </div>
+  </div>
+</div>
+{% endblock body %}
